@@ -1,0 +1,168 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(118, 133, 88);
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    top: 2px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #f0a500;
+}
+
+/* resort Styles */
+.resort {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0.5px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	width: 800px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+	font-size: 60px;
+	padding: 0.5px;
+	background-color: gray;
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Selected Items Styles */
+.selected-items {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    background-color: #e9ecef;
+}
+
+#itemList {
+    list-style: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.receipt {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #28a745;
+    border-radius: 8px;
+    display: none;
+    background-color: #e9ecef;
+}
+
+/* Animation for receipt generation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.receipt {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+footer {
+    background-color: gray;
+    color: yellow;
+    text-align: center;
+    padding: 0.5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+

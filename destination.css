@@ -1,0 +1,101 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('images/background.jpg') no-repeat center center/cover;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(118, 133, 88);
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    top: 2px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #f0a500;
+}
+
+/* Destinations Section Styles */
+.destinations {
+    padding: 2rem;
+    text-align: center;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(244, 244, 244, 0.9);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.card p {
+    margin-bottom: 1rem;
+	font-size: 1.5em;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 0.5px;
+    background-color: rgb(118, 133, 88);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
